@@ -32,7 +32,7 @@ def make_http_request(ip, port):
 
 # Firstly, find the function to return an ip address from whatever the hostname is
 # (This variable is defined at the top of this file if you want to play with it)
-ip_addy =gethostbyname(hostname)
+ip_addy = socket.gethostbyname(hostname)
 # Hint: This is meant for you to use Google to figure out.
 
 # Next, call make_http_request with the correct parameters and then print the response
